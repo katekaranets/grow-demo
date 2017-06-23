@@ -1,0 +1,5 @@
+.speaker-list{
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: row;
+}
