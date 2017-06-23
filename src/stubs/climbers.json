@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Nick Murphy",
+    "age": 35,
+    "numberOfPrise": 5,
+    "city": "Minsk"
+  },
+  {
+    "name": "Edrian",
+    "age": 20,
+    "numberOfPrise": 1,
+    "city": "Minsk"
+  },
+  {
+    "name": "Jonathan",
+    "age": 18,
+    "numberOfPrise": 0,
+    "city": "Minsk"
+  },
+  {
+    "name": "Nick ",
+    "age": 22,
+    "numberOfPrise": 7,
+    "city": "Minsk"
+  },
+  {
+    "name": "Huston",
+    "age": 27,
+    "numberOfPrise": 8,
+    "city": "Minsk"
+  },
+  {
+    "name": "Bradly",
+    "age": 29,
+    "numberOfPrise": 9,
+    "city": "Minsk"
+  },
+  {
+    "name": "Liza",
+    "age": 30,
+    "numberOfPrise": 10,
+    "city": "Minsk"
+  },
+  {
+    "name": "Eric",
+    "age": 25,
+    "numberOfPrise": 54,
+    "city": "Minsk"
+  },
+  {
+    "name": "Julia",
+    "age": 26,
+    "numberOfPrise": 4,
+    "city": "Minsk"
+  },
+  {
+    "name": "Alex",
+    "age": 22,
+    "numberOfPrise": 16,
+    "city": "Minsk"
+  },
+  {
+    "name": "Murphy",
+    "age": 31,
+    "numberOfPrise": 14,
+    "city": "Minsk"
+  }
+]

@@ -5,13 +5,9 @@
   "devDependencies": {
     "react-scripts": "0.8.4"
   },
-  "devDependencies": {
-    "babel-polyfill": "^6.7.2"
-  },
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-router": "^4.1.1"
+    "react-dom": "^15.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

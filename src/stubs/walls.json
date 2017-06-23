@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Climbing wall number 1",
+    "city": "Minsk",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.2,
+    "address": "David Lynch street",
+    "cost": 15,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 2",
+    "city": "Grodno",
+    "startWork": "08:00",
+    "finishWork": "22:00",
+    "wallHeight": 4,
+    "address": "Thom Yorke street",
+    "cost": 10,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 3",
+    "city": "Minsk",
+    "startWork": "10:00",
+    "finishWork": "23:00",
+    "wallHeight": 8,
+    "address": "John Dwyer street",
+    "cost": 8,
+    "boulder": false
+  },
+  {
+    "name": "Climbing wall number 4",
+    "city": "Brest",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.5,
+    "address": "Ty Segall street",
+    "cost": 17,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 5",
+    "city": "Mogilev",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.4,
+    "address": "Ewan McGregor street",
+    "cost": 12,
+    "boulder": false
+  },
+  {
+    "name": "Climbing wall number 6",
+    "city": "Minsk",
+    "startWork": "09:00",
+    "finishWork": "21:00",
+    "wallHeight": 4,
+    "address": "Connan Mockasin street",
+    "cost": 7,
+    "boulder": false
+  },
+  {
+    "name": "Climbing wall number 7",
+    "city": "Grodno",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.4,
+    "address": "Ian Curtis street",
+    "cost": 9,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 8",
+    "city": "Vitebsk",
+    "startWork": "09:00",
+    "finishWork": "22:00",
+    "wallHeight": 4.2,
+    "address": "Jim Hendricks street",
+    "cost": 15,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 9",
+    "city": "Gomel",
+    "startWork": "09:00",
+    "finishWork": "20:00",
+    "wallHeight": 4.5,
+    "address": "Jim Morrison street",
+    "cost": 11,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 10",
+    "city": "Minsk",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.1,
+    "address": "Edward Norton street",
+    "cost": 15,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 11",
+    "city": "Brest",
+    "startWork": "09:00",
+    "finishWork": "23:00",
+    "wallHeight": 4.2,
+    "address": "William Burroughs street",
+    "cost": 15,
+    "boulder": true
+  },
+  {
+    "name": "Climbing wall number 12",
+    "city": "Minsk",
+    "startWork": "08:00",
+    "finishWork": "22:00",
+    "wallHeight": 4.8,
+    "address": "Jack Kerouac street",
+    "cost": 12,
+    "boulder": true
+  }
+]
