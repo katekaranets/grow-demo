@@ -1,26 +1,46 @@
-import React, { Component } from 'react';
-import List from './components/List';
-import './App.css';
+import React, { Component } from 'react'
+import Walls from './components/Walls';
+import Climbers from './components/Climbers';
+import Competitions from './components/Competitions';
+import Questions from './components/Questions';
 
-class App extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {items: []};
-  }
-  componentDidMount() {    
-    fetch(`https://sciencehit.herokuapp.com/api/speakers/ru/second_tour/`)
-      .then(result => result.json())
-      .then(items => { this.setState({items: items})})
-      .catch(err => {console.log(err)});
-  }
-  render() {
-    return (
-      <div className="contact-list-app">
-        <h1>Speaker List</h1>
-        <List items={this.state.items}/>
-      </div>
-    );
-  }
-};
+export default class App extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            route: window.location.hash.substr(1)
+        }
+    }
+    componentDidMount() {
+        window.addEventListener('hashchange', () => {
+            this.setState({
+                route: window.location.hash.substr(1)
+            })
+        })
+    }
+    render() {
+        let Child
 
-export default App;
+        switch (this.state.route) {
+            case '/walls': Child = Walls; break;
+            case '/climbers': Child = Climbers; break;
+            case '/competitions': Child = Competitions; break;
+            case '/questions': Child = Questions; break;
+            default: Child = Walls;
+        }
+
+        return (
+            <div>
+                <h1>Climbing</h1>
+                <ul>
+                    <li><a href='#/walls'>Walls</a></li>
+                    <li><a href='#/climbers'>Climbers</a></li>
+                    <li><a href='#/competitions'>Competitions</a></li>
+                    <li><a href='#/questions'>Questions</a></li>
+                </ul>
+                <Child />
+            </div>
+        )
+
+    }
+}
