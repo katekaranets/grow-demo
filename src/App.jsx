@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Walls from './components/Walls';
+import Walls from './components/Walls/Walls';
 import Climbers from './components/Climbers';
 import Competitions from './components/Competitions';
 import Questions from './components/Questions';
@@ -38,7 +38,7 @@ export default class App extends Component {
                     <li><a href='#/competitions'>Competitions</a></li>
                     <li><a href='#/questions'>Questions</a></li>
                 </ul>
-                <Child />
+                <Child text="hello"/>
             </div>
         )
 

@@ -1,6 +1,6 @@
 [
   {
-    "name": "Climbing wall number 1",
+    "name": "David Lynch's Climbing wall",
     "city": "Minsk",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -10,7 +10,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 2",
+    "name": "Thom Yorke's Climbing wall",
     "city": "Grodno",
     "startWork": "08:00",
     "finishWork": "22:00",
@@ -20,7 +20,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 3",
+    "name": "John Dwyer's Climbing wall",
     "city": "Minsk",
     "startWork": "10:00",
     "finishWork": "23:00",
@@ -30,7 +30,7 @@
     "boulder": false
   },
   {
-    "name": "Climbing wall number 4",
+    "name": "Ty Segall's Climbing wall",
     "city": "Brest",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -40,7 +40,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 5",
+    "name": "Ewan McGregor's Climbing wall",
     "city": "Mogilev",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -50,7 +50,7 @@
     "boulder": false
   },
   {
-    "name": "Climbing wall number 6",
+    "name": "Connan Mockasin's Climbing wall",
     "city": "Minsk",
     "startWork": "09:00",
     "finishWork": "21:00",
@@ -60,7 +60,7 @@
     "boulder": false
   },
   {
-    "name": "Climbing wall number 7",
+    "name": "Ian Curtis's Climbing wall",
     "city": "Grodno",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -70,7 +70,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 8",
+    "name": "Jim Hendricks's Climbing wall",
     "city": "Vitebsk",
     "startWork": "09:00",
     "finishWork": "22:00",
@@ -80,7 +80,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 9",
+    "name": "Jim Morrison's Climbing wall",
     "city": "Gomel",
     "startWork": "09:00",
     "finishWork": "20:00",
@@ -90,7 +90,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 10",
+    "name": "Edward Norton's Climbing wall",
     "city": "Minsk",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -100,7 +100,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 11",
+    "name": "William Burroughs' Climbing wall",
     "city": "Brest",
     "startWork": "09:00",
     "finishWork": "23:00",
@@ -110,7 +110,7 @@
     "boulder": true
   },
   {
-    "name": "Climbing wall number 12",
+    "name": "Jack Kerouac's Climbing wall",
     "city": "Minsk",
     "startWork": "08:00",
     "finishWork": "22:00",
