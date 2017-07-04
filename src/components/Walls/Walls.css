@@ -1,0 +1,38 @@
+.walls {
+    padding: 15px 0;
+}
+
+.search-wall {
+    width: 250px;
+    height: 25px;
+}
+
+.walls ol {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.wall {
+    border-bottom: 1px solid lightgray;
+}
+
+.wall h4{
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.wall-info {
+    display: none;
+
+}
+
+.wall-info-displayed .wall-info{
+    display: block;
+}
+
+.wall-info > div {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}

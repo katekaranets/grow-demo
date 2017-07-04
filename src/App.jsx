@@ -3,6 +3,7 @@ import Walls from './components/Walls/Walls';
 import Climbers from './components/Climbers';
 import Competitions from './components/Competitions';
 import Questions from './components/Questions';
+import './App.css';
 
 export default class App extends Component {
     constructor(props) {
@@ -31,14 +32,16 @@ export default class App extends Component {
 
         return (
             <div>
-                <h1>Climbing</h1>
-                <ul>
-                    <li><a href='#/walls'>Walls</a></li>
-                    <li><a href='#/climbers'>Climbers</a></li>
-                    <li><a href='#/competitions'>Competitions</a></li>
-                    <li><a href='#/questions'>Questions</a></li>
-                </ul>
-                <Child text="hello"/>
+                <header>
+                    <h1>Climbing</h1>
+                    <ul className="header-navigation">
+                        <li><a href='#/walls'>Walls</a></li>
+                        <li><a href='#/climbers'>Climbers</a></li>
+                        <li><a href='#/competitions'>Competitions</a></li>
+                        <li><a href='#/questions'>Questions</a></li>
+                    </ul>
+                </header>
+                <Child/>
             </div>
         )
 

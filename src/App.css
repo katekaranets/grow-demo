@@ -1,15 +1,31 @@
-.contact-list-app{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 300px;
-  padding: 5px;
-  margin: 10px;
-  border: 2px solid #ccc;
-}
-h1 {
-    margin: 10px;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
     text-transform: uppercase;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.header-navigation li {
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+.header-navigation li a {
+
+    color: black;
+}
+
+.walls,
+.climbers,
+.competitions,
+.questions {
+    width: 1200px;
+    margin: 0 auto;
 }
