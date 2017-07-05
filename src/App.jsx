@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Walls from './components/Walls/Walls';
-import Climbers from './components/Climbers';
+import Climbers from './components/Climbers/Climbers';
 import Questions from './components/Questions';
 import './App.css';
 

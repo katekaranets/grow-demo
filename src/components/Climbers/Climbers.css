@@ -1,0 +1,25 @@
+.climbers-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 3px;
+
+}
+
+.climbers-table-header > div {
+    flex: 1;
+}
+.climber {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.climber > div {
+    flex: 1;
+}
