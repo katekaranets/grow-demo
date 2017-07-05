@@ -32,7 +32,7 @@ export default class Wall extends Component {
                 </div>
                 {
                     COMMENTS.map((el, index)=> {
-                        if (el.wallIndex == this.props.index) {
+                        if (el.wallIndex === this.props.index) {
                             return (
                                 <div>
                                     <Comment content={el.content} author={el.author} key={index}/>

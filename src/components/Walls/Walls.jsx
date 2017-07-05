@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
 import Wall from './Wall';
+import Search from './Search/Search';
 import WALLS from '../../stubs/walls.json';
 import './Walls.css';
 
 export default class Walls extends Component {
     render() {
+        var walls = WALLS;
         return (
-            <div className="walls">
-                <input className="search-wall" type="text"/>
-                <ol>{
-                    WALLS.map((el, index)=>{
-                        return <Wall name={el.name}
-                                     wall={el}
-                                     index={index}
-                                     key={index} />
-                    })
-                }
-                </ol>
+            <div>
+                <Search items={walls}/>
             </div>
         )
     }
