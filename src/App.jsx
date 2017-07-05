@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Walls from './components/Walls/Walls';
 import Climbers from './components/Climbers';
-import Competitions from './components/Competitions';
 import Questions from './components/Questions';
 import './App.css';
 
@@ -25,7 +24,6 @@ export default class App extends Component {
         switch (this.state.route) {
             case '/walls': Child = Walls; break;
             case '/climbers': Child = Climbers; break;
-            case '/competitions': Child = Competitions; break;
             case '/questions': Child = Questions; break;
             default: Child = Walls;
         }
@@ -37,7 +35,6 @@ export default class App extends Component {
                     <ul className="header-navigation">
                         <li><a href='#/walls'>Walls</a></li>
                         <li><a href='#/climbers'>Climbers</a></li>
-                        <li><a href='#/competitions'>Competitions</a></li>
                         <li><a href='#/questions'>Questions</a></li>
                     </ul>
                 </header>
