@@ -4,37 +4,23 @@ import CLIMBERS from '../../stubs/climbers.json';
 import './Climbers.css';
 
 export default class Climbers extends Component {
-    sort(param, toBiggest) {
-        var climbers = CLIMBERS;
+    constructor() {
+        super();
+        this.state = {
+            climbers: CLIMBERS,
+        };
+    }
 
-        switch(param) {
-            case "age": {
-                if(toBiggest === true){
-                    // return climbers.sort((a, b)=> {return a.age - b.age })
-                } else {
-                    console.log('false');
-                }
-                break;
-            }
-            case "awards": {
-                if(toBiggest === true){
-                    console.log('true');
-                } else {
-                    console.log('false');
-                }
-                break;
-            }
-            default: {
-                return climbers;
-                break;
-            }
+    sortClimbers(param, toBiggest) {
+        if(toBiggest == true){
+             this.setState({climbers: this.state.climbers.sort((a, b) => {return a[param]-b[param]})})
+        }
+        else {
+            this.setState({climbers: this.state.climbers.sort((a, b) => {return b[param]-a[param]})})
         }
     };
 
     render() {
-
-        var climbers = this.sort();
-
         return (
             <div className="climbers">
                 <div className="climbers-table-header">
@@ -42,17 +28,17 @@ export default class Climbers extends Component {
                     <div>City</div>
                     <div>
                         <span>Age</span>
-                        <button onClick={() => this.sort('age', false)}>^</button>
-                        <button onClick={() => this.sort('age', true)}>v</button>
+                        <button onClick={() => this.sortClimbers('age', false)}>^</button>
+                        <button onClick={() => this.sortClimbers('age', true)}>v</button>
                     </div>
                     <div>
                         <span>Number of awards</span>
-                        <button onClick={() => this.sort('awards', false)}>^</button>
-                        <button onClick={() => this.sort('awards', true)}>v</button>
+                        <button onClick={() => this.sortClimbers('numberOfPrise', false)}>^</button>
+                        <button onClick={() => this.sortClimbers('numberOfPrise', true)}>v</button>
                     </div>
                 </div>
                 {
-                    climbers.map((el, index)=> {
+                    this.state.climbers.map((el, index)=> {
                         return <Climber climber={el} key={index}/>
                     })
                 }
