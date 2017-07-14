@@ -13,10 +13,10 @@ export default class Climbers extends Component {
 
     sortClimbers(param, toBiggest) {
         if(toBiggest == true){
-             this.setState({climbers: this.state.climbers.sort((a, b) => {return a[param]-b[param]})})
+             this.setState({climbers: this.state.climbers.sort((a, b) => {return b[param]-a[param]})})
         }
         else {
-            this.setState({climbers: this.state.climbers.sort((a, b) => {return b[param]-a[param]})})
+            this.setState({climbers: this.state.climbers.sort((a, b) => {return a[param]-b[param]})})
         }
     };
 
