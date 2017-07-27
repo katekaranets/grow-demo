@@ -11,6 +11,7 @@ export default class Climber extends Component {
                 <div>{item.city}</div>
                 <div>{item.age}</div>
                 <div>{item.numberOfPrise}</div>
+                <div><button>Delete</button></div>
             </div>
         )
     }

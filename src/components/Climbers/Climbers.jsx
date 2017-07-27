@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import Climber from './Climber';
+import AddClimber from './AddClimber';
 import CLIMBERS from '../../stubs/climbers.json';
 import './Climbers.css';
 
 export default class Climbers extends Component {
     constructor() {
         super();
+        localStorage.setItem('climbers', JSON.stringify(CLIMBERS));
         this.state = {
-            climbers: CLIMBERS,
+            climbers: JSON.parse(localStorage.getItem('climbers')),
         };
     }
 
@@ -36,13 +38,14 @@ export default class Climbers extends Component {
                         <button onClick={() => this.sortClimbers('numberOfPrise', false)}>^</button>
                         <button onClick={() => this.sortClimbers('numberOfPrise', true)}>v</button>
                     </div>
+                    <div>Action</div>
                 </div>
+                <AddClimber climbers={this.state.climbers}/>
                 {
                     this.state.climbers.map((el, index)=> {
                         return <Climber climber={el} key={index}/>
                     })
                 }
-
             </div>
         );
     }
