@@ -7,8 +7,8 @@ export default class AddClimber extends Component {
         this.state = {
             name: '',
             city: '',
-            age: undefined,
-            numberOfAwards: undefined
+            age: '',
+            numberOfPrise: ''
         };
     }
 
@@ -21,8 +21,8 @@ export default class AddClimber extends Component {
             name: this.state.name,
             city: this.state.city,
             age: this.state.age,
-            numberOfAwards: this.state.numberOfAwards
-        }
+            numberOfPrise: this.state.numberOfPrise
+        };
         this.props.onAdd && this.props.onAdd(newClimber);
     }
 
@@ -34,23 +34,22 @@ export default class AddClimber extends Component {
                     this.addClimber(e);
                 }}>
                     <div>
-
                         <input type="text" name="name" placeholder="name" value={this.state.name} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
                         <input type="text" name="city" placeholder="city" value={this.state.city} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
-                        <input type="number" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
+                        <input type="text" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
-                        <input type="number" name="numberOfAwards" placeholder="number of awards"
-                               value={this.state.numberOfAwards} onChange={(e) => {
+                        <input type="text" name="numberOfPrise" placeholder="number of awards"
+                               value={this.state.numberOfPrise} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
                     </div>
                     <div>
-                        <button>Add Climber</button>
+                        <button>Add</button>
                     </div>
                 </form>
             </div>
