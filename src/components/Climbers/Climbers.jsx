@@ -1,26 +1,46 @@
 import React, {Component} from 'react';
 import Climber from './Climber';
 import AddClimber from './AddClimber';
-import CLIMBERS from '../../stubs/climbers.json';
 import './Climbers.css';
+import ClimberService from '../../services/ClimbersService';
 
 export default class Climbers extends Component {
     constructor() {
         super();
-        localStorage.setItem('climbers', JSON.stringify(CLIMBERS));
         this.state = {
-            climbers: JSON.parse(localStorage.getItem('climbers')),
+            climbers: ClimberService.load(),
         };
     }
 
     sortClimbers(param, toBiggest) {
-        if(toBiggest == true){
+        if(toBiggest){
              this.setState({climbers: this.state.climbers.sort((a, b) => {return b[param]-a[param]})})
         }
         else {
             this.setState({climbers: this.state.climbers.sort((a, b) => {return a[param]-b[param]})})
         }
     };
+
+    createNewClimber(climber){
+        let climbers = this.state.climbers;
+        climbers.unshift(climber);
+        this.setState({climbers});
+        ClimberService.save(climbers);
+    }
+
+    deleteClimber(id) {
+        let climbers = this.state.climbers;
+        var index;
+        climbers.forEach((el, i, arr)=>{
+            if(el.id == id){
+                index = i;
+                return index;
+            }
+        });
+        climbers.splice(index ,1);
+        this.setState({climbers});
+        ClimberService.save(climbers);
+    }
 
     render() {
         return (
@@ -40,10 +60,10 @@ export default class Climbers extends Component {
                     </div>
                     <div>Action</div>
                 </div>
-                <AddClimber climbers={this.state.climbers}/>
+                <AddClimber onAdd={climber => this.createNewClimber(climber)}/>
                 {
                     this.state.climbers.map((el, index)=> {
-                        return <Climber climber={el} key={index}/>
+                        return <Climber climber={el} key={index} id={el.id} onDelete={id => this.deleteClimber(id)}/>
                     })
                 }
             </div>

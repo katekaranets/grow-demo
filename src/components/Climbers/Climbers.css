@@ -13,6 +13,15 @@
 .climbers-table-header > div {
     flex: 1;
 }
+
+.climbers-table-header button {
+    margin-left: 5px;
+}
+
+.climbers-table-header > div:last-child {
+    text-align: right;
+}
+
 .climber {
     display: flex;
     justify-content: space-between;
@@ -22,4 +31,23 @@
 
 .climber > div {
     flex: 1;
+}
+
+.climber > div:last-child {
+     text-align: right;
+ }
+
+.add-climber form {
+    text-align: right;
+    display: flex;
+}
+
+.add-climber form > div:last-child {
+    flex: 1;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.add-climber input {
+    margin: 15px 45px 0px 15px;
 }

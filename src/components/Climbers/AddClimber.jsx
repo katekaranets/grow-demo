@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Climber from './Climber';
 import './Climbers.css';
 
 export default class AddClimber extends Component {
@@ -24,31 +23,35 @@ export default class AddClimber extends Component {
             age: this.state.age,
             numberOfAwards: this.state.numberOfAwards
         }
-
-        this.props.climbers.push(newClimber);
-        // localStorage.setItem('climbers', JSON.stringify(this.state.climbers));
+        this.props.onAdd && this.props.onAdd(newClimber);
     }
 
     render() {
         return (
             <div className="add-climber">
-                <form>
-                    <input type="text" name="name" placeholder="name" value={this.state.name} onChange={(e) => {
-                        this.handleChange(e)
-                    }}/>
-                    <input type="text" name="city" placeholder="city" value={this.state.city} onChange={(e) => {
-                        this.handleChange(e)
-                    }}/>
-                    <input type="number" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
-                        this.handleChange(e)
-                    }}/>
-                    <input type="number" name="numberOfAwards" placeholder="number of awards"
-                           value={this.state.numberOfAwards} onChange={(e) => {
-                        this.handleChange(e)
-                    }}/>
-                    <button onClick={() => {
-                        this.addClimber()
-                    }}></button>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    this.addClimber(e);
+                }}>
+                    <div>
+
+                        <input type="text" name="name" placeholder="name" value={this.state.name} onChange={(e) => {
+                            this.handleChange(e)
+                        }}/>
+                        <input type="text" name="city" placeholder="city" value={this.state.city} onChange={(e) => {
+                            this.handleChange(e)
+                        }}/>
+                        <input type="number" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
+                            this.handleChange(e)
+                        }}/>
+                        <input type="number" name="numberOfAwards" placeholder="number of awards"
+                               value={this.state.numberOfAwards} onChange={(e) => {
+                            this.handleChange(e)
+                        }}/>
+                    </div>
+                    <div>
+                        <button>Add Climber</button>
+                    </div>
                 </form>
             </div>
         );
