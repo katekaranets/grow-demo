@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "enzyme": "^2.9.1",
+    "jest-localstorage-mock": "^1.2.0",
+    "react-scripts": "0.8.4",
+    "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
     "react": "^15.4.1",
@@ -14,5 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
   }
 }

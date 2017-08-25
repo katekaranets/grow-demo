@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import Comment from '../Comments/Comment';
-import COMMENTS from '../../stubs/comments.json';
-import CreateComment from '../Comments/CreateComment';
 
 export default class Wall extends Component {
     constructor() {
@@ -10,12 +7,14 @@ export default class Wall extends Component {
             opened: false,
         };
     }
-    toggleWallInfo(e) {
-        e.target.parentNode.classList.toggle('wall-info-displayed');
+
+    toggleWallInfo() {
+        this.setState({opened: !this.state.opened})
     }
+
     render() {
         return (
-            <li className="wall">
+            <li className={`wall ${this.state.opened ? 'wall-info-displayed' : ''}`}>
                 <div>
                     <h4 className="wall-name" onClick={(e)=> this.toggleWallInfo(e)}>{this.props.name}</h4>
                     <div className="wall-info">
@@ -30,18 +29,6 @@ export default class Wall extends Component {
                         <p className="wall-description">{this.props.wall.description}</p>
                     </div>
                 </div>
-                {
-                    COMMENTS.map((el, index)=> {
-                        if (el.wallIndex === this.props.index) {
-                            return (
-                                <div>
-                                    <Comment content={el.content} author={el.author} key={index}/>
-                                </div>
-                            )
-                        }
-                    })
-                }
-                <CreateComment />
             </li>
         )
     }

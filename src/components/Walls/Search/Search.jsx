@@ -18,7 +18,7 @@ export default class Search extends Component {
         var items = this.props.items;
         var searchString = this.state.searchString.trim().toLowerCase();
 
-        if (searchString.length > 0) {
+        if (searchString.length) {
             items = items.filter(function (el) {
                 return el.name.toLowerCase().match(searchString);
             });
