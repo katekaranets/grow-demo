@@ -17,7 +17,7 @@ export default class Climber extends Component {
                 <div>{item.city}</div>
                 <div>{item.age}</div>
                 <div>{item.numberOfPrise}</div>
-                <div><button onClick={(e) => {this.delete(e)}}>Delete</button></div>
+                <div><button className="delete-climber" onClick={(e) => {this.delete(e)}}>Delete</button></div>
             </div>
         )
     }
