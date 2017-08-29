@@ -45,20 +45,3 @@ it('test deleting of climber from <Climbers/>  list', () => {
     component.find('.delete-climber').first().simulate('click');
     expect(component.find(Climber).length).toBe(CLIMBERS.length - 1);
 });
-
-// it('test addition of new climber to <Climbers/>  list', () => {
-//     const component = mount(
-//         <Climbers items={CLIMBERS}/>
-//     );
-//     expect(component.find(Climber).length).toBe(CLIMBERS.length - 1);
-//     const inputName = component.find('.new-climber-name');
-//     const inputCity = component.find('.new-climber-city');
-//     const inputAge = component.find('.new-climber-age');
-//     const inputPrises = component.find('.new-climber-prises');
-//     inputName.simulate('change', {target: {value: 'Alex'}});
-//     inputCity.simulate('change', {target: {value: 'Moscow'}});
-//     inputAge.simulate('change', {target: {value: '16'}});
-//     inputPrises.simulate('change', {target: {value: '4'}});
-//     component.find('.add-climber-button').simulate('click');
-//     expect(component.find(Climber).length).toBe(CLIMBERS.length);
-// });

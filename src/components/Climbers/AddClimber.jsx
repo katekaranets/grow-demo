@@ -34,22 +34,22 @@ export default class AddClimber extends Component {
                     this.addClimber(e);
                 }}>
                     <div>
-                        <input type="text" name="name" placeholder="name" value={this.state.name} onChange={(e) => {
+                        <input className="new-climber-name" type="text" name="name" placeholder="name" value={this.state.name} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
-                        <input type="text" name="city" placeholder="city" value={this.state.city} onChange={(e) => {
+                        <input className="new-climber-city" type="text" name="city" placeholder="city" value={this.state.city} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
-                        <input type="text" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
+                        <input className="new-climber-age" type="text" name="age" placeholder="age" value={this.state.age} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
-                        <input type="text" name="numberOfPrise" placeholder="number of awards"
+                        <input className="new-climber-prises" type="text" name="numberOfPrise" placeholder="number of awards"
                                value={this.state.numberOfPrise} onChange={(e) => {
                             this.handleChange(e)
                         }}/>
                     </div>
                     <div>
-                        <button>Add</button>
+                        <button className="add-climber-button">Add</button>
                     </div>
                 </form>
             </div>
